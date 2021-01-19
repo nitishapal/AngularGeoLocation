@@ -33,6 +33,9 @@ export class AppComponent implements OnInit {
     });
 
   }
+  getMap(long, lat){
+    this.coordinates = new google.maps.LatLng(long, lat);
+  }
   selectDistrict(cities) {
     debugger;
     this.cities = cities.districts;

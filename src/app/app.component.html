@@ -526,10 +526,10 @@
 <!-- </div> -->
 
 
-<p>You can easily control dropdowns programmatically using the exported dropdown instance.</p>
+<p>you can select your state from the drop down.</p>
 
 <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
-  <button class="btn btn-outline-primary mr-8 btnClass" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()" >Toggle dropdown</button>
+  <button class="btn btn-outline-primary mr-8 btnClass" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()" >Select state</button>
   <div ngbDropdownMenu aria-labelledby="dropdownManual" *ngFor="let item of states, let i = index">
     <button ngbDropdownItem (click)="selectDistrict(item)">{{item.state}}</button>
   </div>
@@ -539,7 +539,7 @@
   <div class="row">
     <div class="col-md-6">
       <div class="d-inline-block" ngbDropdown #myDropCity="ngbDropdown">
-        <button class="btn btn-outline-primary mr-8 btnClass" id="dropdownManual" ngbDropdownAnchor (focus)="myDropCity.open()" >Toggle dropdown</button>
+        <button class="btn btn-outline-primary mr-8 btnClass" id="dropdownManual" ngbDropdownAnchor (focus)="myDropCity.open()" >Select city</button>
         <div ngbDropdownMenu aria-labelledby="dropdownManual" *ngFor="let item of cities">
           <button ngbDropdownItem (click)="selectCity(item)">{{item}}</button>
         </div>
